@@ -16,7 +16,7 @@ class CoinRepository extends EloquentRepository implements CoinRepositoryInterfa
     protected $model = Coin::class;
 
 
-    public function getCoinPrice($price_date, $coin_id)
+    public function getCoinPrice($price_date, $coin_id, $currency)
     {
         $query = $this->newQuery();
         return $query->select([
@@ -24,6 +24,7 @@ class CoinRepository extends EloquentRepository implements CoinRepositoryInterfa
         ])
             ->where('price_date', $price_date)
             ->where('coin_id', $coin_id)
+            ->where('currency', $currency)
             ->first();
     }
 

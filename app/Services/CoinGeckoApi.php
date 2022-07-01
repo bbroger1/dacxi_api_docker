@@ -129,7 +129,7 @@ class CoinGeckoApi
                 ], 400);
             }
 
-            if (!$data = $this->coinRepository->getCoinPrice($request->datetime, $request->coin_id)) {
+            if (!$data = $this->coinRepository->getCoinPrice($request->datetime, $request->coin_id, $request->currency)) {
                 $result = $this->clientCoinGeckoApi->coins()->getMarketChartRange(
                     $request->coin_id,
                     $request->currency,
