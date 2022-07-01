@@ -42,7 +42,7 @@ Now you can see application running on `http://localhost` .
     
     ![retorno_coin](https://user-images.githubusercontent.com/62220624/176809139-7a744af1-5fb4-4de0-b813-dc9190b2c1c5.PNG)
     
-- `/api/coin`
+- `/api/coin/price-estimated-date`
     - Method: POST
     - Params:
         - coin_id (accepted coins - 'bitcoin', 'ethereum', 'dacxi', 'cosmos', 'terra-luna')
@@ -52,5 +52,6 @@ Now you can see application running on `http://localhost` .
 
     - API return example:
     
+    ![retorno_estimated_price](https://user-images.githubusercontent.com/62220624/176809941-39d0971b-ad32-4b4e-9933-9f602e840ac4.PNG)
 
 ## Link application: https://dacxi-api-docker.herokuapp.com/
