@@ -39,7 +39,9 @@ Now you can see application running on `http://localhost` .
     - Note: The api is prepared to handle uppercase and lowercase letters
 
     - API return example:
-
+    
+    ![retorno_coin](https://user-images.githubusercontent.com/62220624/176809139-7a744af1-5fb4-4de0-b813-dc9190b2c1c5.PNG)
+    
 - `/api/coin`
     - Method: POST
     - Params:
@@ -49,5 +51,6 @@ Now you can see application running on `http://localhost` .
     - Note: The api is prepared to handle uppercase and lowercase letters
 
     - API return example:
+    
 
 ## Link application: https://dacxi-api-docker.herokuapp.com/
